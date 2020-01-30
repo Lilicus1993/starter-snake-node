@@ -43,8 +43,10 @@ app.post('/move', (request, response) => {
   // Response data
   const data = {
     moveArr = ['up', 'down', 'left', 'right'],
-    move: for (var i=0; i < moveArr.length; i++) {
-            console.log(moveArr[i]);
+    move: 
+    for (var i=0; i < moveArr.length; i++) {
+            var go = console.log(moveArr[i]);
+            return go;
      }
 
     }
