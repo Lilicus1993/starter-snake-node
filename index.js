@@ -42,7 +42,9 @@ app.post('/move', (request, response) => {
 
   // Response data
   const data = {
-    move: 'left',
+    const arrMove = ["up", "down", "left", "right"];
+    let turn = console.log(arrMove[0]);
+    move: turn,
   
   }
    // move: 'up', // one of: ['up','down','left','right']
