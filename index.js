@@ -42,7 +42,13 @@ app.post('/move', (request, response) => {
 
   // Response data
   const data = {
-    move: 'up', // one of: ['up','down','left','right']
+    var moveArr = ['up', 'down', 'left', 'right'],
+    move: for (var i=0; i < moveArr.length; i++) {
+            console.log(moveArr[i]);
+     }
+
+    }
+   // move: 'up', // one of: ['up','down','left','right']
   }
 
   return response.json(data)
