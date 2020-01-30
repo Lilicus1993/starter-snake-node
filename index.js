@@ -40,7 +40,7 @@ app.post('/start', (request, response) => {
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
   var arrMove = ["up", "down", "left", "right"];
-  var num = Math.random(3);
+  var num = Math.floor(Math.random() * Math.floor(3));
   var turn = arrMove[num];
   //console.log(arrMove[3]);
       
