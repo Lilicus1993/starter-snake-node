@@ -49,6 +49,8 @@ app.post('/move', (request, response) => {
     num = 3;
   } else if (round > 2 && num == 3 ) {
     num = 1;
+  } else {
+    num = 0;
   }
   var turn = arrMove[num];
   //console.log(arrMove[3]);
