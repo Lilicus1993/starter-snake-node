@@ -40,8 +40,8 @@ app.post('/start', (request, response) => {
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
   var arrMove = ["up", "down", "left", "right"];
-  var round += 1;
-  var num += 0;
+  var round++;
+  var num;
   if (round == 1) {
    num = Math.floor(Math.random() * Math.floor(3));
   } else if (round > 2 && num == 1 ) {
