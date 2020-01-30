@@ -39,9 +39,9 @@ app.post('/start', (request, response) => {
 // Handle POST request to '/move'
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
-  const arrMove = ["up", "down", "left", "right"];
+  var arrMove = ["up", "down", "left", "right"];
   const num = Math.random(3);
-  const turn = arrMove[num];
+  var turn = arrMove[num];
   //console.log(arrMove[3]);
       
   // Response data
