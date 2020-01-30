@@ -28,9 +28,6 @@ app.post('/start', (request, response) => {
   // Response data
   const data = {
     color: '#AD56FF',
-    secondary_color: "#00FF00",
-    head_url: "http://placecage.com/c/100/100",
-    name: "Lilicus",
     taunt: "OH GOD PLEASE LET ME EAT",
     head_type: "pixel",
     tail_type: "pixel"
