@@ -42,7 +42,7 @@ app.post('/move', (request, response) => {
   var arrMove = ["up", "down", "left", "right"];
   var round;
   var num;
-  if (round /= 1 || round = null) {
+  if (round == null) {
    num = Math.floor(Math.random() * Math.floor(3));
    round++;
   } else if (round > 2 && num == 1 ) {
