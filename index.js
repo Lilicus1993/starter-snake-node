@@ -41,7 +41,7 @@ app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
   const arrMove = ["up", "down", "left", "right"];
   const num = Math.random(3);
-  let turn = console.log(arrMove[num]);
+  String turn = console.log(arrMove[num]);
       
   // Response data
   const data = {
