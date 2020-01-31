@@ -46,6 +46,8 @@ app.post('/move', (request, response) => {
    //num = Math.floor(Math.random() * Math.floor(3));
    num = 0;
   } else if (round == 6) {
+    num = 1;
+  } else {
     num = 2;
   }
   var turn = arrMove[num];
