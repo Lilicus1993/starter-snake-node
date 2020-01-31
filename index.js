@@ -39,13 +39,13 @@ app.post('/start', (request, response) => {
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
   var arrMove = ["up", "down", "left", "right"];
-  var round = 6;
-  round = request.turn;
+  var turnCount = 6;
+  turnCount = request.body.turn;
   var num = 3;
-  if (round < 6) {
+  if (turnCount < 6) {
    //num = Math.floor(Math.random() * Math.floor(3));
    num = 0;
-  } else if (round == 6) {
+  } else if (turnCount == 6) {
     num = 1;
   } else {
     num = 2;
