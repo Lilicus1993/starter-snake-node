@@ -27,7 +27,10 @@ app.post('/start', (request, response) => {
 
   // Response data
   const data = {
-    color: '#DFFF00',
+    color: '#AD56FF',
+    taunt: "OH GOD PLEASE LET ME EAT",
+    head_type: "pixel",
+    tail_type: "pixel"
   }
 
   return response.json(data)
@@ -36,11 +39,28 @@ app.post('/start', (request, response) => {
 // Handle POST request to '/move'
 app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
+  var arrMove = ["up", "down", "left", "right"];
+  var round;
+  var num;
+  if (round == null) {
+   num = Math.floor(Math.random() * Math.floor(3));
+   round++;
+  } else if (round > 2 && num == 1 ) {
+    num = 3;
+  } else if (round > 2 && num == 3 ) {
+    num = 1;
+  } else {
+    num = 0;
+  }
+  var turn = arrMove[num];
+  //console.log(arrMove[3]);
 
   // Response data
   const data = {
-    move: 'up', // one of: ['up','down','left','right']
+    move: turn,
+  
   }
+   // move: 'up', // one of: ['up','down','left','right']
 
   return response.json(data)
 })
