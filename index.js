@@ -52,7 +52,7 @@ app.post('/move', (request, response) => {
   } else if (turnCount == 6) {
     num = 3;
   } else {
-    num = 2;
+    num = 0;
   }
   var turn = arrMove[num];
   //console.log(arrMove[3]);
