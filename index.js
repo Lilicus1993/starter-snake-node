@@ -48,11 +48,11 @@ app.post('/move', (request, response) => {
   
   if (turnCount < 6) {
    //num = Math.floor(Math.random() * Math.floor(3));
-   num = 0;
+   num = 1;
   } else if (turnCount == 6) {
-    num = 1;
+    num = 0;
   } else {
-    num = 2;
+    num = 3;
   }
   var turn = arrMove[num];
   //console.log(arrMove[3]);
