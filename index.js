@@ -41,7 +41,7 @@ app.post('/move', (request, response) => {
   var arrMove = ["up", "down", "left", "right"];
   var round = request.turn;
   var num = 3;
-  if (round <= 5) {
+  if (round < 6) {
    //num = Math.floor(Math.random() * Math.floor(3));
    num = 0;
   }
