@@ -40,7 +40,7 @@ app.post('/move', (request, response) => {
   // NOTE: Do something here to generate your move
   var arrMove = ["up", "down", "left", "right"];
   var direction = 3;
-  console.log(request);
+ // console.log(request);
   console.log(request.body.you.body[0].x);
   console.log(request.body.you.body[0].y);
 
