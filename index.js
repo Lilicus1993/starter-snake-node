@@ -28,9 +28,8 @@ app.post('/start', (request, response) => {
   // Response data
   const data = {
     color: '#AD56FF',
-    taunt: "OH GOD PLEASE LET ME EAT",
-    head_type: "bendr",
-    tail_type: "small-rattle"
+    headType: "bendr",
+    tailType: "small-rattle"
   }
 
   return response.json(data)
