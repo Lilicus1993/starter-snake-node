@@ -44,14 +44,14 @@ app.post('/move', (request, response) => {
   console.log(request.body.you.body[0].x);
   console.log(request.body.you.body[0].y);
 
-  if (turnCount < 6) {
+ // if (direction == 3) {
    //num = Math.floor(Math.random() * Math.floor(3));
-    direction = 1;
-  } else if (turnCount == 6) {
-    direction = 3;
-  } else {
-    direction = 0;
-  }
+ //   direction += 1;
+  //} else if (turnCount == 6) {
+//    direction = 3;
+//  } else {
+//    direction = 0;
+ // }
   var turn = arrMove[direction];
   //console.log(arrMove[3]);
 
