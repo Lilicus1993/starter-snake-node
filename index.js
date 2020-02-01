@@ -41,8 +41,8 @@ app.post('/move', (request, response) => {
   var arrMove = ["up", "down", "left", "right"];
   var direction = 3;
  // console.log(request);
-  console.log(request.body.you.body[0].x);
-  console.log(request.body.you.body[0].y);
+  console.log("This is x " + request.body.you.body[0].x);
+  console.log("This is y " + request.body.you.body[0].y);
 
  // if (direction == 3) {
    //num = Math.floor(Math.random() * Math.floor(3));
